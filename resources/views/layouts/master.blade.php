@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Blank Page</title>
+  <title>SIKM Papua Barat</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{!! asset('../adminlte/dist/img/AdminLTELogo.png') !!}">
@@ -56,7 +56,7 @@
         </a>
       </li>
       <li>
-        <a class="btn btn-default" href="/" role="button">
+        <a class="btn btn-default" href="/admin" role="button">
           <i class="fas fa-power-off"></i>
         </a>
       </li>
@@ -83,7 +83,7 @@
           <img src="{!! asset('../adminlte/dist/img/user2-160x160.jpg') !!}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">MDCN</a>
+          <a href="/admin/profile/id" class="d-block">MDCN</a>
         </div>
       </div>
 
@@ -130,7 +130,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 1.0.0
     </div>
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">SIKM</a>.</strong> All rights
+    <strong>Copyright &copy; <?php echo date('Y'); ?> SIKM Papua Barat</strong> All rights
     reserved.
   </footer>
 

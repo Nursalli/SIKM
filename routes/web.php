@@ -12,11 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Public
+Route::get('/', function () { return view('index'); });
 
-Route::get('/', function () {
-    return view('login');
-});
-
-Route::get('/admin/dashboard','Dashboard@index')->middleware('guest')->name('dashboard');
-Route::get('/admin/data-permohonan','Permohonan@index')->middleware('guest')->name('permohonan');
-Route::get('/admin/data-pengguna','Pengguna@index')->middleware('guest')->name('pengguna');
+//Admin
+Route::get('/admin', function () { return view('login'); });
+Route::get('/admin/profile/id','UserController@index')->middleware('guest')->name('profile');
+Route::get('/admin/dashboard','DashboardController@index')->middleware('guest')->name('dashboard');
+Route::get('/admin/data-permohonan','PermohonanController@index')->middleware('guest')->name('permohonan');
+Route::get('/admin/data-pengguna','PenggunaController@index')->middleware('guest')->name('pengguna');

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Permohonan extends Controller
+class PermohonanController extends Controller
 {
     public function index(){
         $page = 'data-permohonan';
