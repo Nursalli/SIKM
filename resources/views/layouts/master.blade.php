@@ -56,7 +56,7 @@
         </a>
       </li>
       <li>
-        <a class="btn btn-default" href="#" role="button">
+        <a class="btn btn-default" href="/" role="button">
           <i class="fas fa-power-off"></i>
         </a>
       </li>
