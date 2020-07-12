@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin/dashboard','Dashboard@index')->middleware('guest')->name('dashboard');
+Route::get('/admin/data-permohonan','Permohonan@index')->middleware('guest')->name('permohonan');
+Route::get('/admin/data-pengguna','Pengguna@index')->middleware('guest')->name('pengguna');
